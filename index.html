@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Itim&display=swap"
+            rel="stylesheet"
+        />
+
+        <link rel="stylesheet" href="css/style.css" />
+        <title>Fotogram</title>
+        <link rel="shortcut icon" href="img/favicon.svg" type="image/x-icon" />
+    </head>
+    <body onload="render()">
+        <header>
+            <img id="logo" src="./img/Fotogram_Logo.svg" />
+        </header>
+
+        <main>
+            <h1>Your personal Photo Album</h1>
+            <!-- Image Container -->
+            <div id="content" class="content"></div>
+        </main>
+        <div id="overlay" class="overlayhg d_none" onclick="toggleOverlay()">
+            <div class="dialog" onclick="event.stopPropagation">
+                <!-- verhindert das weiterreichen des Klicks -->
+                <img id="dialog-img" src="" />
+                <div id="photo-title"></div>
+                <img
+                    src="./img/x-circle-regular-24.png"
+                    alt="x-icon"
+                    class="close"
+                />
+                <!-- Bild vorwärts bzw. zurück Funktion -->
+                <img
+                    id="linksButton"
+                    src="./img/chevron-left-solid-60.png"
+                    alt=""
+                />
+                <img
+                    id="rechtsButton"
+                    src="./img/chevron-right-regular-60.png"
+                    alt=""
+                />
+            </div>
+        </div>
+
+        <footer>
+            <img src="img/header_logo_devakademie.svg" alt="" />
+            <span>&copy; 2025 Developer Akademie Gmbh</span>
+        </footer>
+        <script src="script.js"></script>
+    </body>
+</html>
