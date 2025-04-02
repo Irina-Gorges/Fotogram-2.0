@@ -1,0 +1,144 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    position: relative;
+    scroll-behavior: smooth;
+    font-family: "Itim", sans-serif;
+    color: white;
+}
+
+body {
+    width: 100%;
+    height: 100dvh;
+    background-color: rgb(5, 23, 30);
+
+    header {
+        height: 80px;
+        width: 100%;
+        padding: 0 32px;
+        background-color: rgb(44, 33, 75);
+        display: flex;
+        align-items: center;
+
+        #logo {
+            width: 140px;
+            height: 140px;
+        }
+    }
+}
+
+main {
+    width: 100%;
+    height: 100dvh;
+    text-align: center;
+    background-color: rgb(25, 20, 44);
+
+    h1 {
+        font-weight: 100;
+        font-size: 26px;
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+    .content {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+
+        img {
+            width: 100px;
+            height: 100px;
+            cursor: pointer;
+            border-radius: 5px;
+            object-fit: cover;
+        }
+    }
+}
+
+.overlayhg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100dvh;
+    background: rgba(0, 0, 0, 0.8);
+
+    .dialog {
+        display: flex;
+        justify-content: center;
+        width: 330px;
+        height: 400px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: rgb(69, 47, 94);
+        padding: 10px;
+        border-radius: 10px;
+
+        #dialog-img {
+            width: 100%;
+            height: 160px;
+            top: 100px;
+            left: 104px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        #photo-title {
+            position: relative;
+            right: 178px;
+            width: 100px;
+            height: 28px;
+            font-size: 18px;
+        }
+
+        .close {
+            position: relative;
+            width: 30px;
+            height: 28px;
+            cursor: pointer;
+            padding: 5px;
+        }
+    }
+
+    #linksButton {
+        position: relative;
+        top: 320px;
+        right: 260px;
+        width: 50px;
+        height: 50px;
+        cursor: pointer;
+    }
+
+    #rechtsButton {
+        position: relative;
+        top: 320px;
+        right: 130px;
+        width: 50px;
+        height: 50px;
+        cursor: pointer;
+    }
+}
+.d_none {
+    display: none;
+}
+
+footer {
+    height: 100px;
+    width: 100%;
+    background-color: rgb(44, 33, 75);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    bottom: 0;
+    font-size: 10px;
+
+    img {
+        width: 110px;
+        height: auto;
+        padding-bottom: 12px;
+    }
+}
